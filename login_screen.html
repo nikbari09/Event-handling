@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Event Booking Website</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+
+	<style>
+	
+	body{
+		background-image:url('login_page.jpg');
+		background-repeat: no-repeat;
+}
+	
+	form{
+		margin: auto;
+		width: 30%;
+		border: 2px solid;
+		border-radius: 4px;
+		text-align: center;
+		font-size: 24px;
+	}
+	
+	hr {
+  		border: 1px solid #f1f1f1;
+  		margin-bottom: 25px;
+	}
+
+	.footer{
+		background-color: red;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		
+	}
+
+	label{
+	font-size: 26px;
+	}
+	
+	input[type=email], input[type=password] {
+  		width: 90%;
+  		padding: 10px;
+  		margin: auto;
+  		display: inline-block;
+  		border: none;
+  		background: #f1f1f1;
+		}
+
+	</style>
+	
+</head>
+<body>
+	<div style="text-align: center;">
+		<h1>Event Booking Login Page</h1>
+	</div>
+	<div>
+	<form action="http://localhost/login_process.php" method="post">
+		<div style="padding-top: 10px; padding-bottom:10px;">
+			<hr>
+			<label for="email">Email</label>
+			<input type="email" id="email" name="email" placeholder="example@gmail.com"></input><br><br>
+			
+			<label for="password">Password</label>
+			<input type="password" id="password" name="password" placeholder="********"></input><br><br>
+			
+			<hr>
+			<button type="submit" name="submit" style="padding: 5px 5px 5px 5px; border-radius: 4px; background-color: pink; font-size: 24px;">Login</button>
+			
+			
+        </div>
+		<div class="container signin">
+    			<p>Don't have an account? <a href="registration_form.html">Register</a>.</p>
+  		</div>
+			
+		</div>
+			
+	</form>
+		
+	</div>
+	<div class="footer">
+	<p></p>
+	</div>
+</body>
+
+</html>

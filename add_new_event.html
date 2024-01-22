@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Event Booking Website</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+
+		<style>
+		body{
+		background-image:url('register.jpg');
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+}
+		form{
+		margin:auto;
+		width: 40%;
+		border: 2px solid;
+		border-radius: 4px;
+		}
+		* {box-sizing: border-box}
+
+		/* Add padding to containers */
+		.container {
+  		padding: 16px;
+		}
+
+		/* Full-width input fields */
+		input[type=text], input[type=number], input[type=date], input[type=time] {
+  		width: 100%;
+  		padding: 10px;
+  		margin: 5px 0 22px 0;
+  		display: inline-block;
+  		border: none;
+  		background: #f1f1f1;
+		}
+
+		input[type=text]:focus, input[type=number]:focus, input[type=date]:focus, input[type=time]:focus {
+  		background-color: #ddd;
+  		outline: none;
+		}
+
+		/* Overwrite default styles of hr */
+		hr {
+  		border: 1px solid #f1f1f1;
+  		margin-bottom: 25px;
+		}
+
+		/* Set a style for the submit/register button */
+		.registerbtn {
+  		background-color: red;
+ 		color: white;
+  		padding: 14px 20px;
+  		margin: 8px 0;
+  		border: none;
+  		cursor: pointer;
+  		width: 100%;
+  		opacity: 0.9;
+		}
+
+		.registerbtn:hover {
+  		opacity:1;
+		}
+
+		/* Add a blue text color to links */
+		a {
+  		color: dodgerblue;
+		}
+
+		/* Set a grey background color and center the text of the "sign in" section */
+		.signin {
+ 		background-color: #f1f1f1;
+  		text-align: center;
+		}
+
+		.footer{
+		}
+		</style>
+		
+	</head>
+
+<body>
+	<div style="text-align: center;">
+		<h1>Add New Event</h1>
+	</div>
+
+	<div >
+		<form action="http://localhost/add_new_event.php" method="post" >
+  		<div class="container">
+   			<p>Please fill in this form to add new event.</p>
+    			<hr>
+
+			<label for="name"><b>Name Of Event</b></label>
+    			<input type="text" placeholder="Enter Event Name" name="name" id="name" required>
+
+   			<label for="date"><b>Date</b></label>
+    			<input type="date" placeholder="Enter Date" name="date" id="date" required>
+
+   			<label for="time"><b>Time</b></label>
+  			<input type="time" placeholder="Enter Time" name="time" id="time" required>
+
+    			<label for="venue"><b>Venue</b></label>
+    			<input type="text" placeholder="Venue" name="venue" id="venue" required>
+
+			<label for="seats"><b>Available Seats</b></label>
+    			<input type="number" placeholder="Enter Total Seats" name="seats" id="seats" required>
+
+   			<hr>
+
+     			<button type="submit" class="registerbtn">Add Event</button>
+  		</div>
+
+		</form>
+	</div>
+	
+	<div class="footer">
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Event Booking Website</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+
+		<style>
+		form{
+		margin:auto;
+		width: 40%;
+		border: 2px solid;
+		border-radius: 4px;
+		}
+		* {box-sizing: border-box}
+
+		/* Add padding to containers */
+		.container {
+  		padding: 16px;
+		}
+
+		/* Full-width input fields */
+		input[type=number], input[type=email], input[type=text]{
+  		width: 100%;
+  		padding: 10px;
+  		margin: 5px 0 22px 0;
+  		display: inline-block;
+  		border: none;
+  		background: #f1f1f1;
+		}
+
+		input[type=text]:focus, input[type=password]:focus {
+  		background-color: #ddd;
+  		outline: none;
+		}
+
+		/* Overwrite default styles of hr */
+		hr {
+  		border: 1px solid #f1f1f1;
+  		margin-bottom: 25px;
+		}
+
+		/* Set a style for the submit/register button */
+		.registerbtn {
+  		background-color: red;
+ 		color: white;
+  		padding: 14px 20px;
+  		margin: 8px 0;
+  		border: none;
+  		cursor: pointer;
+  		width: 100%;
+  		opacity: 0.9;
+		}
+
+		.registerbtn:hover {
+  		opacity:1;
+		}
+
+		/* Add a blue text color to links */
+		a {
+  		color: dodgerblue;
+		}
+
+		.footer{
+		}
+		</style>
+		
+	</head>
+
+<body>
+	<div style="text-align: center;">
+		<h1>Register For Event</h1>
+	</div>
+
+	<div >
+		<form action="http://localhost/register_event.php" method="post">
+  		<div class="container">
+   			<p>Please fill in this following details.</p>
+    			<hr>
+		
+			<p style="font-size: 18px;"><b>Event Name</b></p>
+		
+			<label for="name"><b>Event Name</b></label>
+    			<input type="text" placeholder="Enter Event name" name="name" id="name" required>
+
+			<label for="email"><b>Email</b></label>
+    			<input type="email" placeholder="Enter Email" name="email" id="email" required>
+
+			<label for="seat"><b>Seats</b></label>
+    			<input type="number" placeholder="Enter Number Of Seats" name="seat" id="seat" required>
+
+   			<hr>
+
+    			<p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+    			<button type="submit" class="registerbtn">Register</button>
+  		</div>
+		</form>
+	</div>
+	
+	<div class="footer">
+	</div>
+
+</body>
+</html>
